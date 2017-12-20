@@ -766,3 +766,9 @@ img.footer-image {
 .banner-wrapper h2 a:hover {
   color: #000 !important;
   background-color: #90cc5d; }
+
+.coming-soon {
+  min-height: 60vh; }
+
+.coming-soon h2 {
+  padding-bottom: 3em; }

@@ -847,3 +847,11 @@ img.footer-image {
   color: #000!important;
   background-color: lighten($deloitte-green, 10%) ;
 }
+
+.coming-soon {
+  min-height: 60vh;
+}
+
+.coming-soon h2 {
+  padding-bottom: 3em;
+}

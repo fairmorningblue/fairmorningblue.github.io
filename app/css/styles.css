@@ -529,10 +529,20 @@ footer .isDisabled:hover {
 .cards {
   background-color: #E8EAE9; }
 
+.cards.white {
+  background-color: #ffffff; }
+
+.white {
+  transition: all 5s ease-in-out; }
+
 .card-wrapper {
   padding: 3em 1em;
   max-width: 1200px;
   margin: 0 auto; }
+
+.card-wrapper.resources {
+  max-width: 100%;
+  padding-top: 0; }
 
 .card {
   background-color: #fff;
@@ -541,7 +551,8 @@ footer .isDisabled:hover {
   margin: 0 1em;
   border: 1px solid #CBCBC6;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  flex: 1; }
 
 /*.card:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -564,6 +575,10 @@ footer .isDisabled:hover {
   margin: 0 auto 1.5em;
   display: block; }
 
+ul li {
+  padding-bottom: 0.8em;
+  line-height: 1.3em; }
+
 @media (min-width: 1000px) {
   .card-wrapper {
     display: flex; }
@@ -573,6 +588,10 @@ footer .isDisabled:hover {
 @media (max-width: 999px) {
   .card {
     margin: 1em; } }
+
+.hide {
+  height: 0;
+  overflow: hidden; }
 
 footer {
   background-color: #000;
@@ -662,6 +681,12 @@ img.footer-image {
   padding: 3em 1em;
   max-width: 1200px;
   margin: 0 auto; }
+
+.page-content.page-break.top {
+  padding-top: 0; }
+
+.page.content.page-break-bottom {
+  padding-bottom: 0; }
 
 .page-section {
   padding: 3em 0; }

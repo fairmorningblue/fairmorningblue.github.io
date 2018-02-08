@@ -554,8 +554,8 @@ footer .isDisabled:hover {
   background-color: #ffffff; }
 
 .white {
-  -webkit-transition: all 1s;
-  transition: all 1s; }
+  -webkit-transition: all 5s ease-in-out;
+  transition: all 5s ease-in-out; }
 
 .card-wrapper {
   padding: 3em 1em;

@@ -619,20 +619,20 @@ footer .isDisabled:hover {
   background-color: #E8EAE9;
 }
 
-.cards.white {
-  background-color: #ffffff;
-
-}
 .white {
-    transition: all 5s ease-in-out;
+  background-color: #ffffff;
+  overflow: hidden;
+  max-height: 1800px;
+  transition: max-height 1s ease;
 }
+
 .card-wrapper {
   padding: 3em 1em;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.card-wrapper.resources {
+.resources {
   max-width: 100%;
   padding-top: 0;
 }
@@ -673,8 +673,8 @@ flex: 1;
 }
 
 ul li {
-  padding-bottom: 0.8em;
-  line-height: 1.3em;
+  padding-bottom: 0.3em;
+  line-height: 1.4em;
 }
 
 @media (min-width: 1000px) {
@@ -692,8 +692,9 @@ ul li {
 }
 
 .hide {
-height: 0;
-overflow: hidden;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
 }
 
 footer {
@@ -825,7 +826,7 @@ img.footer-image {
   font-size: 1.125em;
   line-height: 1.4;
 }
-.page-column p a {
+.page-column p a, .card p a {
   text-decoration: underline;
 }
 @media (min-width: 800px) {
@@ -865,6 +866,12 @@ img.footer-image {
   font-size: 1.5em;
   font-weight: 400;
   text-align: center;
+}
+
+@media (max-width: 640px) {
+.banner-wrapper h2 {
+  font-size: 1.2em;
+}
 }
 
 .banner-wrapper h2 a {

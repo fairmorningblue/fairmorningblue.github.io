@@ -8,7 +8,7 @@
         function reveal(e, current) {
           e.preventDefault();
 
-          current.innerHTML == "Close!" ? CTA.innerHTML = "Open!" : CTA.innerHTML = "Close!";
+          current.innerHTML == "Click to close details" ? CTA.innerHTML = "Click to see day-by-day details" : CTA.innerHTML = "Click to close details";
 
           ALERT.classList.toggle("hide");
         }

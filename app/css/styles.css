@@ -532,13 +532,14 @@ footer .isDisabled:hover {
 .white {
   background-color: #ffffff;
   overflow: hidden;
-  max-height: 1800px;
+  max-height: 2500px;
   transition: max-height 1s ease; }
 
 .card-wrapper {
   padding: 3em 1em;
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
 
 .resources {
   max-width: 100%;
@@ -587,7 +588,8 @@ ul li {
 
 @media (max-width: 999px) {
   .card {
-    margin: 1em; } }
+    margin: 1em 0.5em;
+    padding: 2em; } }
 
 .hide {
   max-height: 0;

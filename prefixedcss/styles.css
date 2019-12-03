@@ -153,7 +153,7 @@ mark {
 small {
   font-size: 70%;
   line-height: 1;
-   }
+  margin-bottom: 16px; }
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in

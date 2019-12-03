@@ -42,9 +42,6 @@ h1 {
   margin: 0.4em 0;
   font-weight: normal; }
 
-  p {text-align: center;
-    padding-top: 100px;}
-
 /* Grouping content
    ========================================================================== */
 /**
@@ -154,7 +151,9 @@ mark {
  * Add the correct font size in all browsers.
  */
 small {
-  font-size: 80%; }
+  font-size: 70%;
+  line-height: 1;
+  margin-bottom: 16px; }
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
@@ -446,7 +445,7 @@ footer .isDisabled:hover {
   max-width: 1200px;
   margin: 0 auto; }
 
-.logo {
+.logo, .logo > img {
   width: 100px;
   height: auto; }
 
@@ -734,7 +733,7 @@ img.footer-image {
 .page-column {
   padding: 0 1em; }
 
-.page-column h2 {
+.page-column h2, .page-column h3, .page-column h4 {
   padding-top: 1em;
   text-align: center;
   font-size: 1.875em;
@@ -742,6 +741,13 @@ img.footer-image {
   margin-top: 0;
   margin-bottom: 0.5em; }
 
+  .page-column h3 {
+    font-size: 1.5em;
+  }
+.page-column h4 {
+  font-size: 1.125em;
+  font-weight: 600;
+}
 .page-column p {
   font-size: 1.125em;
   line-height: 1.4; }
@@ -764,7 +770,7 @@ img.footer-image {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1; }
-  .page-column h2 {
+  .page-column h2, .page-column h3, .page-column h4 {
     padding-top: 0;
     text-align: left; }
   .page-column {
